@@ -7,7 +7,7 @@ import { InvestmentInput } from './investment-input.model';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './user-input.component.html',
-  styleUrl: './user-input.component.css'
+  styleUrl: './user-input.component.css',
 })
 export class UserInputComponent {
   @Output() calculate = new EventEmitter<InvestmentInput>();
@@ -16,14 +16,12 @@ export class UserInputComponent {
   enterdExpectedReturn: number = 5;
   enterdDuration: number = 10;
 
-
   onSubmit() {
     this.calculate.emit({
       initialInvestment: +this.enterdInitialInvestment,
       annualInvestment: +this.enterdAnnuagInvestment,
       expectedReturn: +this.enterdExpectedReturn,
-      duration: +this.enterdDuration
+      duration: +this.enterdDuration,
     });
-
   }
 }
