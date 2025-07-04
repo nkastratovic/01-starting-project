@@ -11,22 +11,22 @@ import { InvestmentInput } from './investment-input.model';
 })
 export class UserInputComponent {
   calculate = output<InvestmentInput>();
-  enterdInitialInvestment = signal('0');
-  enterdAnnuagInvestment = signal('0');
-  enterdExpectedReturn = signal('5');
-  enterdDuration = signal('10');
+  enteredInitialInvestment = signal('0');
+  enteredAnnualInvestment = signal('0');
+  enteredExpectedReturn = signal('5');
+  enteredDuration = signal('10');
 
   onSubmit() {
     this.calculate.emit({
-      initialInvestment: +this.enterdInitialInvestment(),
-      annualInvestment: +this.enterdAnnuagInvestment(),
-      expectedReturn: +this.enterdExpectedReturn(),
-      duration: +this.enterdDuration(),
+      initialInvestment: +this.enteredInitialInvestment(),
+      annualInvestment: +this.enteredAnnualInvestment(),
+      expectedReturn: +this.enteredExpectedReturn(),
+      duration: +this.enteredDuration(),
     });
 
-    this.enterdInitialInvestment.set('0');
-    this.enterdAnnuagInvestment.set('0');
-    this.enterdExpectedReturn.set('5');
-    this.enterdDuration.set('10');
+    this.enteredInitialInvestment.set('0');
+    this.enteredAnnualInvestment.set('0');
+    this.enteredExpectedReturn.set('5');
+    this.enteredDuration.set('10');
   }
 }
