@@ -1,12 +1,11 @@
 {
-    "HELLO": "Zdravo",
+    "HELLO": "Hello",
     "WELCOME": "Welcome to our site",
-    "Daily Login": "Dnevna prijava",
-    "Spin Now" : "Zavrti sada",
-    "Available spins" : "Dostupni spinovi",
-    "All wagers earn tickets each week":"Sve opklade donose tikete svake nedelje",
-    "Total Spin Bonus": "Ukupan Spin Bonus",
-    "Win" : "Osvojeno",
-    "Spin Wheel Achievements": "Dostignuća na točku sreće"
+    "Daily Login": "Daily Login",
+    "Spin Now" : "Spin Now",
+    "Available spins" : "Available spins",
+    "All wagers earn tickets each week": "All wagers earn tickets each week",
+    "Total Spin Bonus": "Total Spin Bonus",
+    "Win" : "Win",
+    "Spin Wheel Achievements": "Spin Wheel Achievements"
   }
-  
